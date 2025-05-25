@@ -27,6 +27,70 @@ import json
 
 API_KEY = "cc099cfca8464b55b73357eec92da761"
 
+def run_query(query):
+  try:
+      response = requests.post(
+          url="https://api.trafikinfo.trafikverket.se/v2/data.json",
+          data=query.encode("utf-8"),
+          headers={"Content-Type": "text/xml"},
+      )
+
+      # Check for HTTP errors
+      response.raise_for_status()
+
+      # Try parsing JSON
+      try:
+          data = response.json()
+      except json.JSONDecodeError as e:
+          print("❌ Failed to parse JSON response:")
+          print(response.text)
+          raise e
+
+      # Check for API-level errors in the response
+      if "RESPONSE" in data and "RESULT" in data["RESPONSE"]:
+          result = data["RESPONSE"]["RESULT"][0]
+          if "ERROR" in result:
+              print("⚠️ API Error:")
+              print(json.dumps(result["ERROR"], indent=2))
+          else:
+              print("✅ Success")
+      else:
+          print("⚠️ Unexpected response format:")
+          print(json.dumps(data, indent=2))
+
+  except requests.exceptions.RequestException as e:
+      print("🚨 HTTP Request failed:")
+      print(e)
+  return response
+
+def fetch_stations():
+    query = f"""
+    <REQUEST>
+        <LOGIN authenticationkey='{API_KEY}' />
+          <<QUERY  objecttype="TrainStation" namespace="rail.infrastructure" schemaversion="1.5">
+            <FILTER>
+    
+            </FILTER>
+            <EXCLUDE>LocationInformationText</EXCLUDE>
+            <EXCLUDE>ModifiedTime</EXCLUDE>
+            
+          </QUERY>
+    </REQUEST>
+    """
+
+    print(query)
+    response = run_query(query)
+
+
+    data = response.json()
+
+
+    data = response.json()["RESPONSE"]["RESULT"][0]["TrainAnnouncement"]
+    df = pd.json_normalize(data)
+
+
+    return df
+
 def fetch_departures(station_code="Cst"):
     now = datetime.now()
     now_str = now.strftime("%Y-%m-%dT%H:%M:%S")
@@ -71,48 +135,10 @@ def fetch_departures(station_code="Cst"):
     """
 
     print(query)
-
-    try:
-        response = requests.post(
-            url="https://api.trafikinfo.trafikverket.se/v2/data.json",
-            data=query.encode("utf-8"),
-            headers={"Content-Type": "text/xml"},
-        )
-
-        # Check for HTTP errors
-        response.raise_for_status()
-
-        # Try parsing JSON
-        try:
-            data = response.json()
-        except json.JSONDecodeError as e:
-            print("❌ Failed to parse JSON response:")
-            print(response.text)
-            raise e
-
-        # Check for API-level errors in the response
-        if "RESPONSE" in data and "RESULT" in data["RESPONSE"]:
-            result = data["RESPONSE"]["RESULT"][0]
-            if "ERROR" in result:
-                print("⚠️ API Error:")
-                print(json.dumps(result["ERROR"], indent=2))
-            else:
-                print("✅ Success")
-        else:
-            print("⚠️ Unexpected response format:")
-            print(json.dumps(data, indent=2))
-
-    except requests.exceptions.RequestException as e:
-        print("🚨 HTTP Request failed:")
-        print(e)
-        
-  
+    response = run_query(query)
 
 
     data = response.json()
- 
-
-
 
 
     data = response.json()["RESPONSE"]["RESULT"][0]["TrainAnnouncement"]
