@@ -15,74 +15,77 @@ Welcome to STORM!
   
 The repository highlights technical competencies and project work across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
 
-<img src="material/storm.jpg"  width="100%"/>
+
 
 
 ---
-
 ## Project Overview
 
-In this project, I focus on extracting, storing, and visualizing **Train Announcement** data from the Swedish Transport Administration’s public API. The project demonstrates how to work with live data feeds, automate data ingestion, and create meaningful reports.
+This project focuses on extracting, storing, and visualizing **Train Announcement** data from the Swedish Transport Administration’s public API. It demonstrates working with live data feeds, automating data ingestion, and creating meaningful reports.
 
-The key objectives were:
+Key objectives include:
 
-- Extract real-time train announcement data from Trafikverket’s API  
-- Store the data in a cloud database (Azure SQL)  
-- Automate the data collection and ingestion process  
-- Build a Power BI report to visualize train announcements effectively
+- Extracting real-time train announcement data from Trafikverket’s API  
+- Storing the data in a cloud database (Azure SQL)  
+- Automating the data collection and ingestion process  
+- Building a Power BI report to visualize train announcements effectively  
 
 ---
 
 ## Step 1: Data Extraction with Jupyter Notebook
 
-In the initial phase, I explored and extracted train announcement data using a Jupyter Notebook (located in the `notebook` folder):
+The initial phase involves exploring and extracting train announcement data using a Jupyter Notebook (located in the `notebook` folder):
 
-- Connected to Trafikverket’s API ([https://data.trafikverket.se/](https://data.trafikverket.se/))  
+- Connection established with Trafikverket’s API ([https://data.trafikverket.se/](https://data.trafikverket.se/))  
 - Queried and retrieved train announcement data in JSON/XML format  
 - Parsed and transformed the data into structured tables  
 - Exported the processed data as CSV files into the `data` folder for validation and further use  
 
-This step was essential to understand the API structure and data details about train schedules, delays, and statuses.
+This step helps in understanding the API structure and the details of train schedules, delays, and statuses.
 
 ---
 
 ## Step 2: Cloud Storage with Azure SQL Database
 
-To enable scalable and efficient storage, I provisioned an **Azure SQL Database**:
+To ensure scalable and efficient storage, an **Azure SQL Database** is provisioned:
 
-- Designed a relational database schema tailored for train announcement data  
-- Created tables optimized for querying time-series and event data  
-- Established secure connections for data insertion and retrieval  
-- Set up indexing to enhance query performance  
+- A relational database schema is designed for train announcement data  
+- Tables optimized for querying time-series and event data are created  
+- Secure connections for data insertion and retrieval are established  
+- Indexing is configured to improve query performance  
 
-This database serves as the core data repository for all train announcement records.
+This serves as the central repository for train announcement records.
 
 ---
 
 ## Step 3: Automated Data Pipeline Using Azure Functions and Power Automate
 
-To keep the data fresh and updated continuously, I automated the data ingestion process:
+To maintain continuously updated data, the ingestion process is fully automated:
 
-- Developed an **Azure Function** (implemented with PowerShell) that periodically calls the Trafikverket API to fetch new train announcement data  
-- The function processes and writes this data directly into the Azure SQL Database  
-- Leveraged **Microsoft Power Automate** to schedule and orchestrate the execution of the Azure Function on a regular basis, ensuring seamless automation  
+- An **Azure Function** (implemented with PowerShell) periodically calls the Trafikverket API to fetch new data  
+- The function processes and writes the data directly into the Azure SQL Database  
+- **Microsoft Power Automate** is used to schedule and orchestrate the execution of the Azure Function on a recurring basis  
 
-This setup eliminates manual intervention and guarantees the database always reflects the latest train announcements.
+This setup ensures the database reflects the most recent train announcements without manual effort.
 
 ---
 
 ## Step 4: Data Visualization with Power BI
 
-Finally, I created a Power BI report to showcase insights from the train announcement data:
+A Power BI report is created to provide insights into the train announcement data:
 
-- Connected Power BI directly to the Azure SQL Database  
-- Designed interactive dashboards highlighting train schedules, delays, and announcements  
-- Implemented filters and visual elements for dynamic user exploration  
-- Shared the report for easy access by stakeholders  
+- Connected directly to the Azure SQL Database  
+- Dashboards highlight train schedules, delays, and announcements  
+- Filters and visual elements enable dynamic exploration  
+- The report is shared to facilitate easy access and stakeholder engagement  
 
-This visualization enables efficient monitoring and analysis of train operations based on live data.
+This visualization supports effective monitoring and analysis of train operations based on live data.
 
 ---
+
+## Project Structure
+
+
 
 ## Project Structure
 
@@ -106,28 +109,29 @@ my-project/
 
 ---
 
+---
+
 ## Technologies Used
 
-- Python & Jupyter Notebook for data extraction and processing  
-- Azure SQL Database for cloud data storage  
-- Azure Functions (PowerShell) for serverless automation  
-- Microsoft Power Automate for scheduling and workflow automation  
-- Power BI for data visualization and reporting  
+- **Python** & **Jupyter Notebook** for data extraction and transformation  
+- **Azure SQL Database** for cloud-based storage  
+- **Azure Functions** (PowerShell) for serverless automation  
+- **Microsoft Power Automate** for task scheduling and orchestration  
+- **Power BI** for interactive data visualization and reporting  
 
 ---
 
 ## Conclusion
 
-This project highlights my ability to build and automate a complete data engineering workflow — from live data acquisition through cloud storage and automation to insightful visualization. It demonstrates proficiency with modern tools and platforms widely used in enterprise data projects.
+This project demonstrates the ability to design and automate a complete data engineering workflow — encompassing live data acquisition, cloud storage, serverless automation, and insightful reporting. It reflects proficiency in tools and platforms commonly used in enterprise data solutions.
 
-Feel free to explore the code and resources here, and reach out if you have any questions or collaboration ideas!
+Explore the code and resources provided. For further information or collaboration opportunities, feel free to connect.
 
 ---
 
-**Thank you for visiting my portfolio!**
+**Thank you for visiting this portfolio!**
 
 ---
 
 *Max*  
-PhD Student & Data Engineer  
-
+PhD Student & Data Engineer
