@@ -1,3 +1,4 @@
+<center> <img src = "material/thunder_.png"> </center>
 <p align="center"><strong>STORM – Smart Train Observation & Reporting Model</strong></p>
 
 
