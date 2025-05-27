@@ -11,8 +11,8 @@
 
 ## Introduction
 
-Welcome to my GitHub portfolio!  
-This portfolio is designed to showcase my technical skills and project experience in data engineering, cloud services, automation, and data visualization. The goal is to present the capabilities you are looking for by demonstrating a real-world end-to-end data pipeline.
+Welcome to STORM!  
+Technical skills and experience in data engineering, cloud services, automation, and data visualization are demonstrated in this repository through a real-world end-to-end data pipeline.
 
 <img src="material/storm.jpg"  width="100%"/>
 
