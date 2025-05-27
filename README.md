@@ -1,4 +1,4 @@
-<p align="center">STORM – Smart Train Observation & Reporting Model</p>
+<p align="center"><strong>STORM – Smart Train Observation & Reporting Model</strong></p>
 
 
 
