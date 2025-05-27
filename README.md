@@ -1,6 +1,6 @@
 <p align="center">STORM – Smart Train Observation & Reporting Model</p>
 
-<img src="material/storm.jpg"  width="100%"/>
+
 
 
 
@@ -13,6 +13,9 @@
 
 Welcome to my GitHub portfolio!  
 This portfolio is designed to showcase my technical skills and project experience in data engineering, cloud services, automation, and data visualization. The goal is to present the capabilities you are looking for by demonstrating a real-world end-to-end data pipeline.
+
+<img src="material/storm.jpg"  width="100%"/>
+
 
 ---
 
