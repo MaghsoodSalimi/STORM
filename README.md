@@ -12,7 +12,8 @@
 ## Introduction
 
 Welcome to STORM!  
-Technical skills and experience in data engineering, cloud services, automation, and data visualization are demonstrated in this repository through a real-world end-to-end data pipeline.
+  
+The repository highlights technical competencies and project work across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
 
 <img src="material/storm.jpg"  width="100%"/>
 
