@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 [View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
 
 
@@ -14,7 +10,7 @@
 
 Welcome to STORM!  
   
-The repository highlights technical competencies and project work across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
+The repository highlights a project work and technical competencies across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
 
 
 
@@ -83,10 +79,6 @@ A Power BI report is created to provide insights into the train announcement dat
 This visualization supports effective monitoring and analysis of train operations based on live data.
 
 ---
-
-## Project Structure
-
-
 
 ## Project Structure
 
