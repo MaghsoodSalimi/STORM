@@ -11,7 +11,6 @@
 
 ## Introduction
 
-Welcome to STORM!  
   
 The repository highlights a project work and technical competencies across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
 
