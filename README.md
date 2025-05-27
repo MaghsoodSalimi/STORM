@@ -80,19 +80,19 @@ This visualization enables efficient monitoring and analysis of train operations
 
 
 /
-├── notebook/ # Jupyter Notebook for API data extraction and processing
-├── data/ # CSV files exported from the notebook
-├── azure-function/ # Azure Function code for automated data ingestion
-├── power-bi-report/ # Power BI report files and resources
-├── README.md # This file
+├── notebook/ # Jupyter Notebook for API data extraction and processing  
+├── data/ # CSV files exported from the notebook  
+├── azure-function/ # Azure Function code for automated data ingestion  
+├── power-bi-report/ # Power BI report files and resources  
+├── README.md # This file  
 
-my-project/
-├── src/
-│   ├── main.py
-│   └── utils.py
-├── tests/
-│   └── test_main.py
-└── README.md
+my-project/  
+├── src/  
+│   ├── main.py  
+│   └── utils.py  
+├── tests/  
+│   └── test_main.py  
+└── README.md  
 
 
 
