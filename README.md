@@ -86,6 +86,13 @@ This visualization enables efficient monitoring and analysis of train operations
 ├── power-bi-report/ # Power BI report files and resources
 ├── README.md # This file
 
+my-project/
+├── src/
+│   ├── main.py
+│   └── utils.py
+├── tests/
+│   └── test_main.py
+└── README.md
 
 
 
