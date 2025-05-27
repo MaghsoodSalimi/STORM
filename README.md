@@ -82,6 +82,20 @@ This visualization supports effective monitoring and analysis of train operation
 
 ---
 
+## Step 5: AI-Powered Train Delay Forecasting  
+
+To forecast train delays based on historical and contextual data, a machine learning model is developed and integrated into the system:
+
+- Historical train data from the Azure SQL Database is extracted and preprocessed for training  
+- External data such as weather conditions, public holidays, and company-specific factors are merged as additional features  
+- Gradient boosting algorithms (e.g., XGBoost or LightGBM) are employed to build a robust predictive model  
+- The model is evaluated using metrics like Mean Absolute Error (MAE) and accuracy on a hold-out test set  
+- Predictions are exposed through an API endpoint to enable real-time delay forecasts for upcoming trips  
+
+This component provides actionable insights to improve scheduling and operational efficiency.
+
+
+---  
 ## Project Structure
 
 
