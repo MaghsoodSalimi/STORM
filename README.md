@@ -2,6 +2,20 @@
 
 
 
+📁 ProjectRoot  
+├── 📁 data  
+│   ├── 📄 input.csv  
+│   └── 📄 output.csv  
+├── 📁 scripts  
+│   ├── 📄 preprocess.py  
+│   └── 📄 train_model.py  
+├── 📁 models  
+│   └── 📄 model.pkl  
+├── 📁 notebooks  
+│   └── 📄 analysis.ipynb  
+├── 📄 README.md  
+└── 📄 requirements.txt  
+
 
 
 
