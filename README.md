@@ -2,21 +2,6 @@
 
 
 
-```
-ProjectRoot/
-├── data/
-│   ├── input.csv
-│   └── output.csv
-├── scripts/
-│   ├── preprocess.py
-│   └── train_model.py
-├── models/
-│   └── model.pkl
-├── notebooks/
-│   └── analysis.ipynb
-├── README.md
-└── requirements.txt
-```
 
 
 
@@ -107,7 +92,8 @@ This visualization supports effective monitoring and analysis of train operation
 
 
    
-'''
+```
+
 /
 ├── notebook/ # Jupyter Notebook for API data extraction and processing  
 ├── data/ # CSV files exported from the notebook  
@@ -123,7 +109,27 @@ my-project/
 │   └── test_main.py  
 └── README.md  
 
-'''
+```
+
+
+
+
+
+```
+ProjectRoot/
+├── data/
+│   ├── input.csv
+│   └── output.csv
+├── scripts/
+│   ├── preprocess.py
+│   └── train_model.py
+├── models/
+│   └── model.pkl
+├── notebooks/
+│   └── analysis.ipynb
+├── README.md
+└── requirements.txt
+```
 
 ---
 
