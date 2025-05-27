@@ -1,5 +1,5 @@
 <p align="center"><img src = "material/thunder_.png"> </p>
-<p align="center"><strong>STORM!</strong></p>
+<p align="center"><strong>STORM</strong></p>
 <p align="center"><strong>Smart Train Observation & Reporting Model</strong></p>
 
 ---
