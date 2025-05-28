@@ -28,7 +28,7 @@ Key objectives include:
 - Storing the data in a cloud database (Azure SQL)  
 - Automating the data collection and ingestion process  
 - Building a Power BI report to visualize train announcements effectively
-- Buliding an AI model to forecast train delay, using historical data    
+- Buliding an AI model to forecast train delay, using the historical data    
 
 ---
 
