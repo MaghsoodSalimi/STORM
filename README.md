@@ -38,7 +38,8 @@ The initial phase involves exploring and extracting train announcement data usin
 - Connection established with Trafikverket’s API ([https://data.trafikverket.se/](https://data.trafikverket.se/))  
 - Queried and retrieved train announcement data in JSON/XML format  
 - Parsed and transformed the data into structured tables  
-- Exported the processed data as CSV files into the `data` folder for validation and further use  
+- Exported the processed data as CSV files into the `data` folder for validation and further use
+- Visualizing data using python libraries  
 
 This step helps in understanding the API structure and the details of train schedules, delays, and statuses.
 
@@ -61,7 +62,7 @@ This serves as the central repository for train announcement records.
 
 To maintain continuously updated data, the ingestion process is fully automated:
 
-- An **Azure Function** (implemented with PowerShell) periodically calls the Trafikverket API to fetch new data  
+- An **Azure Function** periodically calls the Trafikverket API to fetch new data  
 - The function processes and writes the data directly into the Azure SQL Database  
 - **Microsoft Power Automate** is used to schedule and orchestrate the execution of the Azure Function on a recurring basis  
 
