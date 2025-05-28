@@ -12,8 +12,7 @@
 ## Introduction
 
   
-The repository highlights a project work and technical competencies across data engineering, cloud platforms, automation, and data visualization, illustrating relevant capabilities through an end-to-end data pipeline.  
-
+This repository showcases a comprehensive project that demonstrates technical competencies across data engineering, cloud platforms, automation, data visualization, and applied machine learning. It highlights the development of an end-to-end data pipeline integrated with an AI model, emphasizing real-time data processing and predictive analytics.
 
 
 
@@ -28,7 +27,7 @@ Key objectives include:
 - Storing the data in a cloud database (Azure SQL)  
 - Automating the data collection and ingestion process  
 - Building a Power BI report to visualize train announcements effectively
-- Buliding an AI model to forecast train delay, using the historical data    
+- Developing an AI model to forecast train delay, using historical data    
 
 ---
 
