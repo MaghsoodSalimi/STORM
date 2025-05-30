@@ -82,9 +82,9 @@ def create_features_for_prediction(
 
 
 # Load your model and encoders
-model = joblib.load('../model/trained_model.pkl')
-label_encoders = joblib.load('../model/encoders.pkl')
-feature_info = joblib.load('../model/model_info.json')
+model = joblib.load('trained_model.pkl')
+label_encoders = joblib.load('encoders.pkl')
+feature_info = joblib.load('model_info.json')
 
 st.title("Train Delay Prediction")
 
