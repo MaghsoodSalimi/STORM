@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
-
+import json
 
 import numpy as np
 
@@ -84,7 +84,9 @@ def create_features_for_prediction(
 # Load your model and encoders
 model = joblib.load('trained_model.pkl')
 label_encoders = joblib.load('encoders.pkl')
-feature_info = joblib.load('model_info.json')
+with open('model_info.json', 'r') as f:
+    feature_info = json.load(f)
+
 
 st.title("Train Delay Prediction")
 
