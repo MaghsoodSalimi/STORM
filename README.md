@@ -27,7 +27,8 @@ Key objectives include:
 - Storing the data in a cloud database (Azure SQL)  
 - Automating the data collection and ingestion process  
 - Building a Power BI report to visualize train announcements effectively
-- Developing an AI model to forecast train delay, using historical data    
+- Developing an AI model to forecast train delay, using historical data  
+- Deploying a Streamlit app to predict the train delay based on user entries
 
 ---
 
@@ -85,13 +86,12 @@ This visualization supports effective monitoring and analysis of train operation
 
 ## Step 5: AI-Powered Train Delay Forecasting  
 
-To forecast train delays based on historical and contextual data, a machine learning model is developed and integrated into the system:
+To forecast train delays based on historical data, a machine learning model has been developed and integrated into a user-facing application:
 
-- Historical train data from the Azure SQL Database is extracted and preprocessed for training  
-- External data such as weather conditions, public holidays, and company-specific factors are merged as additional features  
-- Gradient boosting algorithms (e.g., XGBoost or LightGBM) are employed to build a robust predictive model  
-- The model is evaluated using metrics like Mean Absolute Error (MAE) and accuracy on a hold-out test set  
-- Predictions are exposed through an API endpoint to enable real-time delay forecasts for upcoming trips  
+- Historical train departure data is read from CSV files and preprocessed for training  
+- An XGBoost model is trained to predict train delays based on features like scheduled departure time and actual departure  
+- The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
+- A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
 
 This component provides actionable insights to improve scheduling and operational efficiency.
 
