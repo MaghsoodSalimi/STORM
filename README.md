@@ -5,10 +5,6 @@
 ---
 
 
-[View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
-
-
-
 ## Introduction
 
   
@@ -80,7 +76,9 @@ A Power BI report is created to provide insights into the train announcement dat
 - Filters and visual elements enable dynamic exploration  
 - The report is shared to facilitate easy access and stakeholder engagement  
 
-This visualization supports effective monitoring and analysis of train operations based on live data.
+This visualization supports effective monitoring and analysis of train operations based on live data.  [View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
+
+
 
 ---
 
