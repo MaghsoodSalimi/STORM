@@ -16,12 +16,12 @@ This project focuses on extracting, storing, and visualizing **Train Announcemen
 
 **Key objectives include:**
 
-- 🚉 Extracting real-time train announcement data from Trafikverket's API  
-- ☁️ Storing the data in a cloud database (Azure SQL)  
-- 🤖 Automating the data collection and ingestion process  
-- 📊 Building a Power BI report to visualize train announcements effectively
-- 🧠 Developing an AI model to forecast train delay, using historical data  
-- 🌐 Deploying a Streamlit app to predict the train delay based on user entries
+-  Extracting real-time train announcement data from Trafikverket's API  
+-  Storing the data in a cloud database (Azure SQL)  
+-  Automating the data collection and ingestion process  
+-  Building a Power BI report to visualize train announcements effectively
+-  Developing an AI model to forecast train delay, using historical data  
+-  Deploying a Streamlit app to predict the train delay based on user entries
 
 ---
 
@@ -29,11 +29,11 @@ This project focuses on extracting, storing, and visualizing **Train Announcemen
 
 The initial phase involves exploring and extracting train announcement data using a Jupyter Notebook (located in the `notebook` folder):
 
-- 🔗 Connection established with Trafikverket's API ([https://data.trafikverket.se/](https://data.trafikverket.se/))  
-- 📥 Queried and retrieved train announcement data in JSON/XML format  
-- 🗃️ Parsed and transformed the data into structured tables  
-- 💾 Exported the processed data as CSV files into the `data` folder for validation and further use
-- 📈 Visualizing data using python libraries  
+-  Connection established with Trafikverket's API ([https://data.trafikverket.se/](https://data.trafikverket.se/))  
+-  Queried and retrieved train announcement data in JSON/XML format  
+-  Parsed and transformed the data into structured tables  
+-  Exported the processed data as CSV files into the `data` folder for validation and further use
+-  Visualizing data using python libraries  
 
 This step helps in understanding the API structure and the details of train schedules, delays, and statuses.
 
