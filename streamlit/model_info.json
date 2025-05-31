@@ -3,17 +3,15 @@
     "Hour",
     "hour_sin",
     "hour_cos",
-    "route_avg_delay",
-    "route_std_delay",
-    "route_count",
     "is_rush_hour",
     "is_night",
-    "route"
+    "route",
+    "InformationOwner"
   ],
   "model_type": "XGBoost",
   "performance": {
-    "rmse": 4.646714026920084,
-    "mae": 1.832466029316187,
-    "r2": 0.003325448800230335
+    "rmse": 3.9355539794751344,
+    "mae": 1.6298336974661798,
+    "r2": 0.2850540253981302
   }
 }
