@@ -150,7 +150,10 @@ ProjectRoot/
 - **Azure SQL Database** for cloud-based storage  
 - **Azure Functions** (PowerShell) for serverless automation  
 - **Microsoft Power Automate** for task scheduling and orchestration  
-- **Power BI** for interactive data visualization and reporting  
+- **Power BI** for interactive data visualization and reporting
+- **XGBoost** for training a predictive model based on historical data
+- **Streamlit** to quickly build a data app which recieves the input from user and predicts the train delays in minutes 
+
 
 ---
 
