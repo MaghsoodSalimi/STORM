@@ -5,10 +5,6 @@
 ---
 
 
-[View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
-
-
-
 ## Introduction
 
   
@@ -27,7 +23,8 @@ Key objectives include:
 - Storing the data in a cloud database (Azure SQL)  
 - Automating the data collection and ingestion process  
 - Building a Power BI report to visualize train announcements effectively
-- Developing an AI model to forecast train delay, using historical data    
+- Developing an AI model to forecast train delay, using historical data  
+- Deploying a Streamlit app to predict the train delay based on user entries
 
 ---
 
@@ -79,19 +76,20 @@ A Power BI report is created to provide insights into the train announcement dat
 - Filters and visual elements enable dynamic exploration  
 - The report is shared to facilitate easy access and stakeholder engagement  
 
-This visualization supports effective monitoring and analysis of train operations based on live data.
+This visualization supports effective monitoring and analysis of train operations based on live data.  [View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
+
+
 
 ---
 
 ## Step 5: AI-Powered Train Delay Forecasting  
 
-To forecast train delays based on historical and contextual data, a machine learning model is developed and integrated into the system:
+To forecast train delays based on historical data, a machine learning model has been developed and integrated into a user-facing application:
 
-- Historical train data from the Azure SQL Database is extracted and preprocessed for training  
-- External data such as weather conditions, public holidays, and company-specific factors are merged as additional features  
-- Gradient boosting algorithms (e.g., XGBoost or LightGBM) are employed to build a robust predictive model  
-- The model is evaluated using metrics like Mean Absolute Error (MAE) and accuracy on a hold-out test set  
-- Predictions are exposed through an API endpoint to enable real-time delay forecasts for upcoming trips  
+- Historical train departure data is read from CSV files and preprocessed for training  
+- An XGBoost model is trained to predict train delays based on features like scheduled departure time and actual departure  
+- The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
+- A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
 
 This component provides actionable insights to improve scheduling and operational efficiency.
 
@@ -150,7 +148,9 @@ ProjectRoot/
 - **Azure SQL Database** for cloud-based storage  
 - **Azure Functions** (PowerShell) for serverless automation  
 - **Microsoft Power Automate** for task scheduling and orchestration  
-- **Power BI** for interactive data visualization and reporting  
+- **Power BI** for interactive data visualization and reporting
+- **XGBoost** for training a predictive model based on historical data
+- **Streamlit** to quickly building a data app that recieves user input and predicts train delays in minutes  
 
 ---
 
