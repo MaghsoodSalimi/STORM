@@ -43,10 +43,10 @@ This step helps in understanding the API structure and the details of train sche
 
 To ensure scalable and efficient storage, an **Azure SQL Database** is provisioned:
 
-- 🗄️ A relational database schema is designed for train announcement data  
-- 🏗️ Tables optimized for querying time-series and event data are created  
-- 🔒 Secure connections for data insertion and retrieval are established  
-- ⚡ Indexing is configured to improve query performance  
+-  A relational database schema is designed for train announcement data  
+-  Tables optimized for querying time-series and event data are created  
+-  Secure connections for data insertion and retrieval are established  
+-  Indexing is configured to improve query performance  
 
 This serves as the central repository for train announcement records.
 
@@ -56,9 +56,9 @@ This serves as the central repository for train announcement records.
 
 To maintain continuously updated data, the ingestion process is fully automated:
 
-- ⏰ An **Azure Function** periodically calls the Trafikverket API to fetch new data  
-- 🔄 The function processes and writes the data directly into the Azure SQL Database  
-- 🗓️ **Microsoft Power Automate** is used to schedule and orchestrate the execution of the Azure Function on a recurring basis  
+-  An **Azure Function** periodically calls the Trafikverket API to fetch new data  
+-  The function processes and writes the data directly into the Azure SQL Database  
+-  **Microsoft Power Automate** is used to schedule and orchestrate the execution of the Azure Function on a recurring basis  
 
 This setup ensures the database reflects the most recent train announcements without manual effort.
 
@@ -68,10 +68,10 @@ This setup ensures the database reflects the most recent train announcements wit
 
 A Power BI report is created to provide insights into the train announcement data:
 
-- 📡 Connected directly to the Azure SQL Database  
-- 📊 Dashboards highlight train schedules, delays, and announcements  
-- 🎛️ Filters and visual elements enable dynamic exploration  
-- 📤 The report is shared to facilitate easy access and stakeholder engagement  
+-  Connected directly to the Azure SQL Database  
+-  Dashboards highlight train schedules, delays, and announcements  
+-  Filters and visual elements enable dynamic exploration  
+-  The report is shared to facilitate easy access and stakeholder engagement  
 
 This visualization supports effective monitoring and analysis of train operations based on live data.  
 [🔗 View the interactive report](https://app.powerbi.com/reportEmbed?reportId=48a3bf00-09a3-4843-83c2-d6381d5168a4&autoAuth=true&ctid=a1795b64-dabd-4758-b988-b309292316cf)
@@ -82,10 +82,10 @@ This visualization supports effective monitoring and analysis of train operation
 
 To forecast train delays based on historical data, a machine learning model has been developed and integrated into a user-facing application:
 
-- 🗂️ Historical train departure data is read from CSV files and preprocessed for training  
-- 🧮 An XGBoost model is trained to predict train delays based on features like scheduled departure time and actual departure  
-- 📏 The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
-- 🖥️ A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
+-  Historical train departure data is read from CSV files and preprocessed for training  
+-  An XGBoost model is trained to predict train delays based on features like scheduled departure time and actual departure  
+-  The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
+-  A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
 
 This component provides actionable insights to improve scheduling and operational efficiency.
 
