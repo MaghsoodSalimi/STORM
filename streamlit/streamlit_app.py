@@ -69,7 +69,7 @@ def create_features_for_prediction(
 
 import os
 print("Current working directory:", os.getcwd())
-print("Files in current directory:", os.listdir()+'/stremlit/')
+print("Files in current directory:", os.listdir('./stremlit/'))
 
 
 
