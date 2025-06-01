@@ -74,7 +74,7 @@ print("Files in current directory:", os.listdir())
 
 
 # Load your model and encoders
-model = joblib.load('strealimt/trained_model.pkl')
+model = joblib.load('./strealimt/trained_model.pkl')
 label_encoders = joblib.load('strealimt/encoders.pkl')
 with open('model_info.json', 'r') as f:
     feature_info = json.load(f)
