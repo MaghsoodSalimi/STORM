@@ -67,27 +67,22 @@ def create_features_for_prediction(
     return features
 
 
-import os
-print("Current working directory:", os.getcwd())
-print("Files in current directory:", os.listdir('stremlit'))
-
-
 
 # Load your model and encoders
-model = joblib.load('./strealimt/trained_model.pkl')
-label_encoders = joblib.load('strealimt/encoders.pkl')
-with open('model_info.json', 'r') as f:
+model = joblib.load('./streamlit/trained_model.pkl')
+label_encoders = joblib.load('./streamlit/encoders.pkl')
+with open('./streamlit/model_info.json', 'r') as f:
     feature_info = json.load(f)
 
 
     
 import json
 
-with open('info_owner_options.json', 'r') as f:
+with open('./streamlit/info_owner_options.json', 'r') as f:
     info_owner_options = json.load(f)
-with open('from_station_options.json', 'r') as f:
+with open('./streamlit/from_station_options.json', 'r') as f:
     from_station_options = json.load(f)
-with open('to_station_options.json', 'r') as f:
+with open('./streamlit/to_station_options.json', 'r') as f:
     to_station_options = json.load(f)
 
     
