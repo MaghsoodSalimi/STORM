@@ -67,6 +67,12 @@ def create_features_for_prediction(
     return features
 
 
+import os
+print("Current working directory:", os.getcwd())
+print("Files in current directory:", os.listdir())
+
+
+
 # Load your model and encoders
 model = joblib.load('trained_model.pkl')
 label_encoders = joblib.load('encoders.pkl')
