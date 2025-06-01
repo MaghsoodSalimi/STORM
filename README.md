@@ -66,6 +66,8 @@ This setup ensures the database reflects the most recent train announcements wit
 
 ## 4️⃣ Data Visualization with Power BI
 
+<p align="center"><img src="material/powerbi.png" width="100%" ></p>
+
 A Power BI report is created to provide insights into the train announcement data:
 
 -  Connected directly to the Azure SQL Database  
