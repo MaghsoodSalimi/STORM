@@ -89,7 +89,7 @@ To forecast train delays based on historical data, a machine learning model has 
 -  The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
 -  A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
 
-<p align="center"><img src="material/streamliapp.png" width="80%" ></p>  
+<p align="center"><img src="material/streamlitapp.png" width="80%" ></p>  
 This component provides actionable insights to improve scheduling and operational efficiency.
 
 ---  
