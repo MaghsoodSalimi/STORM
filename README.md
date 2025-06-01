@@ -87,7 +87,7 @@ To forecast train delays based on historical data, a machine learning model has 
 -  Historical train departure data is read from CSV files and preprocessed for training  
 -  An XGBoost model is trained to predict train delays based on features like scheduled departure time and actual departure  
 -  The model's performance is evaluated using metrics such as Mean Absolute Error (MAE) on a test set  
--  A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively  
+-  A Streamlit app is built to allow users to input relevant trip details and receive delay predictions interactively. [Check the app here](https://maxsalimi.streamlit.app/)  
 
 <p align="center"><img src="material/streamlitapp.png" width="80%" ></p>  
 This component provides actionable insights to improve scheduling and operational efficiency.
