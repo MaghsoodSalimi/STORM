@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 import json
 import pandas as pd
+import json
 
 import numpy as np
 
@@ -75,8 +76,6 @@ with open('./streamlit/model_info.json', 'r') as f:
     feature_info = json.load(f)
 
 
-    
-import json
 
 with open('./streamlit/info_owner_options.json', 'r') as f:
     info_owner_options = json.load(f)
