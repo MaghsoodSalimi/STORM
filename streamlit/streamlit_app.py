@@ -78,10 +78,7 @@ with open('./streamlit/model_info.json', 'r') as f:
 
 with open('./streamlit/info_owner_options.json', 'r') as f:
     info_owner_options = json.load(f)
-with open('./streamlit/from_station_options.json', 'r') as f:
-    from_station_options = json.load(f)
-with open('./streamlit/to_station_options.json', 'r') as f:
-    to_station_options = json.load(f)
+
 
 # Load station code-name mapping
 with open('./streamlit/station_code_name_map.json', 'r', encoding='utf-8') as f:
