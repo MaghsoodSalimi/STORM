@@ -109,17 +109,16 @@ ProjectRoot/
 │       ├── train_departures.csv
 │       └── stations.csv
 ├── streamlit/
-│   ├── streamlit_app.py           # Streamlit web app
-│   ├── model_info.json            # Model metadata
-│   ├── to_station_options.json    # Dropdown options
-│   ├── from_station_options.json  # Dropdown options
-│   ├── info_owner_options.json    # Dropdown options
-│   ├── encoders.pkl               # Label encoders
-│   ├── trained_model.pkl          # Trained ML model
-│   └── requirements.txt           # Streamlit dependencies
+│   ├── streamlit_app.py              # Streamlit web app
+│   ├── model_info.json               # Model metadata
+│   ├── station_code_name_map.json    
+│   ├── info_owner_options.json    
+│   ├── encoders.pkl                  # Label encoders
+│   ├── trained_model.pkl             # Trained ML model
+│   └── requirements.txt              # Streamlit dependencies
 ├── material/
-│   ├── thunder_.png               # Logo/icon
-│   └── storm.jpg                  # Project image
+│   ├── thunder_.png                  # Logo/icon
+│   └── storm.jpg                     # Project image
 ```
 
 ---
