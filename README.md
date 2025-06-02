@@ -133,7 +133,8 @@ ProjectRoot/
 - **Power BI** for interactive data visualization and reporting
 - **XGBoost** for training a predictive model based on historical data
 - **Streamlit** to quickly build a data app that receives user input and predicts train delays in minutes
-- **Cursor** used as the IDE for development  
+- **Cursor** used as the IDE for development
+- **Git** for version control and integration with Streamlit deployment
 
 ---
 
