@@ -6,7 +6,7 @@
 
 ## 🚀 Introduction
 
-This repository showcases a comprehensive project that demonstrates technical competencies across data engineering, cloud platforms, automation, data visualization, and applied machine learning. It highlights the development of an end-to-end data pipeline integrated with an AI model, emphasizing real-time data processing and predictive analytics.
+This repository showcases a comprehensive project that demonstrates technical competencies across data engineering, cloud platforms, automation, data visualization, applied machine learning, and simple web app development. It highlights the development of an end-to-end data pipeline integrated with an AI model, emphasizing real-time data processing and predictive analytics.
 
 ---
 
