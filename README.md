@@ -109,16 +109,19 @@ ProjectRoot/
 │       ├── train_departures.csv
 │       └── stations.csv
 ├── streamlit/
-│   ├── streamlit_app.py              # Streamlit web app
-│   ├── model_info.json               # Model metadata
-│   ├── station_code_name_map.json    
-│   ├── info_owner_options.json    
-│   ├── encoders.pkl                  # Label encoders
-│   ├── trained_model.pkl             # Trained ML model
-│   └── requirements.txt              # Streamlit dependencies
+│   ├── streamlit_app.py           # Streamlit web app
+│   ├── model_info.json            # Model metadata
+│   ├── info_owner_options.json    # Dropdown options
+│   ├── to_station_options.json    # Dropdown options
+│   ├── station_code_name_map.json # Station code-name mapping
+│   ├── encoders.pkl               # Label encoders
+│   ├── trained_model.pkl          # Trained ML model
+│   └── requirements.txt           # Streamlit dependencies
 ├── material/
-│   ├── thunder_.png                  # Logo/icon
-│   └── storm.jpg                     # Project image
+│   ├── thunder_.png               # Logo/icon
+│   ├── powerbi.png                # Power BI screenshot
+│   ├── streamlit.png              # Streamlit screenshot
+│   └── model.png                  # Model screenshot
 ```
 
 ---
