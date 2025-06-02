@@ -84,18 +84,30 @@ with open('./streamlit/from_station_options.json', 'r') as f:
 with open('./streamlit/to_station_options.json', 'r') as f:
     to_station_options = json.load(f)
 
-    
+# Load station code-name mapping
+with open('./streamlit/station_code_name_map.json', 'r', encoding='utf-8') as f:
+    station_map = json.load(f)
+
+# Build mapping dicts
+code_to_name = {row['LocationSignature']: row['AdvertisedLocationName'] for row in station_map}
+name_to_code = {row['AdvertisedLocationName']: row['LocationSignature'] for row in station_map}
+
+from_station_names = sorted(name_to_code.keys())
+to_station_names = sorted(name_to_code.keys())
+
 st.title("Train Delay Prediction")
 
-# User input widgets (now as dropdowns)
+# User input widgets (now as dropdowns with names)
 Information_Owner = st.selectbox("Information Owner", info_owner_options)
-from_station = st.selectbox("From Station Code", from_station_options)
-to_station = st.selectbox("To Station Code", to_station_options)
+from_station_name = st.selectbox("From Station", from_station_names)
+to_station_name = st.selectbox("To Station", to_station_names)
 hour = st.number_input("Departure Hour (0-23)", min_value=0, max_value=23, value=8)
 
+# Convert selected names to codes for backend
+from_station = name_to_code[from_station_name]
+to_station = name_to_code[to_station_name]
+
 if st.button("Predict Delay"):
-    # Prepare features (you may need to adjust this to match your model)
-    # Example assumes you have a function to create the feature vector
     features = create_features_for_prediction(Information_Owner, from_station, to_station, hour, label_encoders, feature_info)
     prediction = model.predict(features)[0]
     st.success(f"Predicted delay: {prediction:.1f} minutes")
