@@ -34,8 +34,7 @@ def create_features_for_prediction(
     is_rush_hour = int((7 <= hour <= 9) or (17 <= hour <= 19))
     is_night = int((hour <= 6) or (hour >= 22))
 
-    print(label_encoders)
-
+  
     # Encode route
     if 'route_encoder' in label_encoders and route in label_encoders['route_encoder'].classes_:
         route_encoded = label_encoders['route_encoder'].transform([route])[0]
